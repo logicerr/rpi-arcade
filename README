@@ -1,0 +1,18 @@
+This project in it's current state does nothing. If you found this on accident
+you shouldn't waste your time trying to build it.
+
+To build:
+$ make rpi_arcade_defconfig
+$ make
+
+To reconfigure:
+$ make (menuconfig/nconfig/xconfig/linux-menuconfig/..)
+
+To update the defconfig:
+$ make savedefconfig
+
+So long as you're using rpi_arcade_defconfig, savedefconfig should put it back
+in our br2-external dir, so no need to copy it around.
+
+The top level make file does very little, mostly just sets up BR2_EXTERNAL and
+passes stuff to Buildroot to do the heavy lifing.

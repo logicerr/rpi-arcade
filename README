@@ -14,5 +14,8 @@ $ make savedefconfig
 So long as you're using rpi_arcade_defconfig, savedefconfig should put it back
 in our br2-external dir, so no need to copy it around.
 
+Once you have a good build, find your generated SD image here:
+rpi-buildroot/output/images/sdcard.img
+
 The top level make file does very little, mostly just sets up BR2_EXTERNAL and
 passes stuff to Buildroot to do the heavy lifing.
